@@ -19,20 +19,15 @@
 </div>
 
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+  <div ng-app="britTrialNgApp">
+    <div ng-controller="FirstCtrl">
+      <input type="text" ng-model="data.message">
+      <h1>{{data.message}}</h1>
+    </div>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
+    <div ng-controller="SecondCtrl">
+      <input type="text" ng-model="data.message">
+      <h1>{{reversedMessage(data.message)}}</h1>
+    </div>
+  </div>
 </div>

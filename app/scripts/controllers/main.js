@@ -7,4 +7,9 @@ angular.module('britTrialNgApp')
       'AngularJS',
       'Karma'
     ];
-  });
+  })
+
+  .controller('MapCtrl', ['$scope', function($scope, $location){
+
+
+  }]);

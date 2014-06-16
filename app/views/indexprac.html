@@ -6,7 +6,7 @@
 </head>
 <div class="header">
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
+    <li class="active"><a ng-href="#/main">Home</a></li>
     <li><a ng-href="#/brit1">British Practice</a></li>
     <li><a ng-href="#/sight">Sight</a></li>
     <li><a ng-href="#/thegirls">The Girls</a></li>
@@ -15,8 +15,15 @@
   <h3 class="text-muted">britTrialNg</h3>
 </div>
 <body>
+<div ng-app="britTrialNgApp">
+	<input type="text" ng-model="data.message"/>
 	<h1>{{hello}}</h1>
-	<input type="text"/>
-
+	<h2>{{5 * 5}}</h2>
+	<h1>{{data.message + "Edisto"}}</h1>
+	
+<div class="{{data.message}}">
+	Wrap me with a foundation component
+</div>
+</div>
 </body>
 </html>

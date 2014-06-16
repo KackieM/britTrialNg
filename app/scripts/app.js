@@ -24,8 +24,8 @@ angular.module('britTrialNgApp', [
         templateUrl: 'views/thegirls.html',
         controller: 'MainCtrl'
       })
-      .when('/', {
-        templateUrl: 'views/main.html',
+      .when('/indexprac', {
+        templateUrl: 'views/indexprac.html',
         controller: 'MainCtrl'
       })
       .otherwise({
