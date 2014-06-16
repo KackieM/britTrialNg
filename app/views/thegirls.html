@@ -1,20 +1,46 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html data-ng-app="britTrialNgApp">
+<head lang="en">
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>THE GIRLS</title>
 </head>
 <div class="header">
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
+    <li class=""><a ng-href="#">Home</a></li>
     <li><a ng-href="#/brit1">British Practice</a></li>
     <li><a ng-href="#/sight">Sight</a></li>
     <li><a ng-href="#">The Girls</a></li>
     <li><a ng-href="#/indexprac">Practice</a></li>
   </ul>
-  <h3 class="text-muted">britTrialNg</h3>
+  <h3 class="text-muted">THE GIRLS</h3>
 </div>
-<body>
+<body data-ng-init="names=['Kat', 'Jack', 'Summer', 'Mark']">
+   <p class="lead">
+    <img src="images/mickupsidedown.jpg" alt="GIMME SHELTER"><br>
+  </p>
+  <p><a class="btn btn-lg btn-default" ng-href="#/brit1">MOVE ON!</a></p>
+
+  <div class="container">
+    Name: <input type="text" data-ng-model="name"/>
+      {{name}}
+  </div>
+
+  <div class="container"
+    data-ng-init="names=
+
+    <h3>Looping with ng-repeat directive</h3>
+    <ul>
+      <li data-ng-repeat="name in names">{{personName}}</li>
+    </ul>
+  </div>  
+
+
+
+
+
+
+
+ 
 	
 </body>
 </html>
