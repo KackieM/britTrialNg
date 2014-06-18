@@ -16,12 +16,12 @@ angular.module('britTrialNgApp', [
         templateUrl: 'views/brit1.html',
         controller: 'MainCtrl'
       })
-      .when('/sight', {
-        templateUrl: 'views/sight.html',
+      .when('/sights', {
+        templateUrl: 'views/sights.html',
         controller: 'MainCtrl'
       })
-      .when('/thegirls', {
-        templateUrl: 'views/thegirls.html',
+      .when('/tipsfromlocals', {
+        templateUrl: 'views/tipsfromlocals.html',
         controller: 'MainCtrl'
       })
       .when('/indexprac', {
